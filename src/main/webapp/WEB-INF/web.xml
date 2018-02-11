@@ -32,7 +32,7 @@
 
 	<!-- SpringMVC 配置 -->
 	<servlet>
-		<servlet-name>code</servlet-name>
+		<servlet-name>codegenerator</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
@@ -40,7 +40,7 @@
 		</init-param>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>code</servlet-name>
+		<servlet-name>codegenerator</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 

@@ -1,10 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>Hello world
-</body>
-</html>
+<%@ taglib uri="WEB-INF/masterpage.tld" prefix="master"%>
+<master:ContentPage materPageId="master">
+
+<master:Content contentPlaceHolderId="title">
+    子页,标题
+</master:Content>
+
+<master:Content contentPlaceHolderId="nav">
+    <h5>子页导航</h5> 
+</master:Content>
+
+<master:Content contentPlaceHolderId="main">
+    <h3>子页主内容</h3>
+    <br />
+    ${test }
+</master:Content>
+
+</master:ContentPage>

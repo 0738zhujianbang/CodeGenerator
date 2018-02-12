@@ -1,6 +1,7 @@
 package com.zhujianbang.generator.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -14,8 +15,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController
 {
 	@RequestMapping(value = "/index.do", method = RequestMethod.GET)
-	public String index()
+	public String index(ModelMap model)
 	{
+		model.addAttribute("test", "测试内容");
+
 		return "index";
 	}
+
 }
